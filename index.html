@@ -87,9 +87,6 @@
         ties : 0
     };
 
-    
-
-
         function playgame(playermove) {
         let result = '';
         const computermove = letcomputermove();
@@ -160,7 +157,7 @@
             score.ties++;
         }
 
-        localStorage.setitem('score', JSON.stringify(score));
+    
         
      alert(`You choose ${playermove}, the computer choose ${computermove}, ${result}
 Wins : ${score.wins}  Ties : ${score.ties}  Losses : ${score.losses}`);
